@@ -1,0 +1,27 @@
+<% include header %>
+<h3>AGREGAR UNA VICTIMA NUEVA</h3>
+<form method="post" role="form">
+    <div class="form-group">
+        <label for="title">Nombre</label>
+        <input type="text" class="form-control" id="title" name="title" placeholder="Escribe El nombre" required/>
+    </div>
+    <div class="form-group">
+        <label for="body">Numero</label>
+        <input type="text" class="form-control" id="body" name="body" placeholder="Escribe El Numero" rows="3" required>
+    </div>
+
+    <div class="form-group">
+        <label for="body">Direccion</label>
+        <input type="text" class="form-control" id="direc" name="direc" placeholder="Escribe La Direccion" rows="3" required>
+    </div>
+
+    <div class="form-group">
+        <label for="body">Instagram</label>
+        <input type="text" class="form-control" id="insta" name="insta" placeholder="Escribe El Instagram" rows="3" required>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary" value="ACEPTAR"/>
+    </div>
+</form>
+<%include footer %>

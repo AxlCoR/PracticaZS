@@ -1,0 +1,28 @@
+<% include header %>
+<% if(entries.length){ %>
+    <% entries.forEach((entry) =>{ %>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="text-muted pull-right">
+                    <%= entry.created %>
+                </div>
+                <%= entry.title %>
+            </div>
+            <div class="panel-body">
+                <h3>Numero</h3>
+                <%= entry.body %>
+            </div>
+            <div class="panel-body">
+                <h3>Direccion</h3>
+                <%= entry.direc %>
+            </div>
+            <div class="panel-body">
+                <h3>Instagram</h3>
+                <%= entry.insta %>
+            </div>
+        </div>
+    <% }) %>  
+<% }else { %>
+    <h3>NO SE HAN REGISTRADO VICTIMAS</h3>
+<% } %>
+<% include footer %>
